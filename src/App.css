@@ -1,5 +1,10 @@
+html, body, #root, .App {
+  height: 100%;
+}
+
 .App {
   text-align: center;
+    font-family: Retina,Arial,Helvetica,sans-serif;
 }
 
 .App-logo {
@@ -7,32 +12,208 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.WSJ-Header {
+  width: 100%;
+  font-family: Retina,Arial,Helvetica,sans-serif;
+}
+
+h1 {
+  height: 65px;
+width: 570px;
+margin: 0 auto 10px;
+  background-image: url(https://vir.wsj.net/fp/assets/webpack4/img/wsj-logo-big-black.360b936a.svg);
+background-size: 550px;
+background-repeat: no-repeat;
+background-position: center 16.5px;
+}
+
+nav {
+  height: 34px;
+  font-size: 14px;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+/* 
+.NavContainer > ul {
+  font-family: Retina,Arial,Helvetica,sans-serif;
+  min-width: 100px;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+}
+.NavContainer > ul > li {
+  display: inline-block;
+  list-style-type: disc;
+  margin: 0 10px;
+}
+.NavContainer > ul > li >div {
+  display: none;
+  position: absolute;
+  text-align: left;
+  padding: 20px;
+  width: 100%;
+  left: 0;
+  display: none;
+  background: #f9f9f9;
+  top: 34px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.NavContainer > ul > li:hover div{
+  display: block;
+  
+} */
+
+
+.MakeScroll {
+  height: 200%;
+}
+
+.CompanyContainer {
+  height: 20px;
+}
+.CompanyBrand {
+  position: absolute;
+  left: 10%;
+  top: 0;
+  font-size: 10px;
+  height: 20px;
+}
+.CompanyBrand > a {
+   padding: 0;
+}
+
+.MarketSummary {
+  background-color: #111111;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.dropdown-toggle::after {
+  display:none;
+}
+
+.Account, .Search {
+  position: absolute;
+  right: 10%;  
+}
+.Search {
+  font-size: 12px;
+  top: 160px;
+}
+.SearchIcon {
+  padding: 20px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIj48cGF0aCBkPSJNOCAxNUE3IDcgMCAxMDggMWE3IDcgMCAwMDAgMTR6Ii8+PHBhdGggZD0iTTEzIDEzbDUuNSA1LjUiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiLz48L2c+PC9zdmc+);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Account {
+  top: 50px;
+}
+.Account > a {
+  padding: 0 10px;
+}
+
+.SubNavBar {
+  padding: 0;
+}
+.SubNavBar *{
+  font-size: 12px;
+  color: black;
+  padding: 0;
+  margin: 0 auto;
+}
+
+
+.RightBorder {
+  border-right: 1px solid #ccc;
+}
+.BottomBorder {
+  border-bottom: 1px solid #ccc;
+}
+.SmallDisplay {
+ display: none;
+}
+.SmallSubSignIn > button{
+  width: 40%;
+  border: 2px solid black;
+  flex: 1;
+}
+
+
+@media screen and (max-width: 991px)
+and (min-width: 620px) {
+  .SmallHide {
+    display: none;
+  }
+  .SmallDisplay {
+    display: block;
+  }
+  .Title {
+    border-bottom: 1px solid #ccc;
+    padding: 0;
+    margin-bottom: 5px;
+    height: 60px;
+  }
+  .MainNavBar {
+    position: absolute;
+    top: 45px;
+    background: transparent;
+  }
+  .bg-light {
+    background: transparent;
+    border: none;
+  }
+  .Search {
+    top: 55px;
+    right: 0;
+  }
+  h1 {
+    background-image: url(https://vir.wsj.net/fp/assets/webpack4/img/wsj-logo.e2a1cadf.svg);
+background-size: 275px 24px;
+width: 275px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 620px) {
+  .SmallHide {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .MobileHide {
+    display: none;
+  }
+  .SmallDisplay {
+    display: block;
+  }
+
+  .Title {
+    border-bottom: 1px solid #ccc;
+    padding: 0;
+    margin-bottom: 5px;
+    height: 50px;
+  }
+  .MainNavBar {
+    position: absolute;
+    top: 45px;
+    background: transparent;
+  }
+  .bg-light {
+    background: transparent;
+    border: none;
+  }
+  .Search {
+    top: 55px;
+    right: 0;
+  }
+
+  h1 {
+    background-image: url(https://vir.wsj.net/fp/assets/webpack4/img/wsj-logo-alt.ad4677f0.svg);
+    background-size: 40px 22px;
+    width: 40px;
   }
 }
